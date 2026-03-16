@@ -62,15 +62,10 @@ python -m pytest
 ### What the tests cover
 
 - Task completion status updates correctly
-
 - Adding a task increases a pet's task count
-
 - Tasks are sorted in chronological order
-
 - Daily recurring tasks create a new task for the next day
-
 - Conflict detection flags duplicate task times
-
 - Pets with no tasks return an empty schedule
 
 ### Confidence Level: 4/5 stars
@@ -84,3 +79,14 @@ git add .
 git commit -m "test: add automated test suite for PawPal+ system"
 git push origin main
 ```
+## Final Features
+
+The final version of PawPal+ includes:
+
+- Adding pets through the Streamlit interface
+- Adding tasks for a selected pet
+- Displaying a daily schedule in chronological order
+- Filtering and organizing backend task data through the scheduler
+- Recurring daily and weekly tasks
+- Conflict warnings for tasks scheduled at the same exact time
+- Automated tests for key scheduling behaviors
