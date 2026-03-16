@@ -90,3 +90,9 @@ The final version of PawPal+ includes:
 - Recurring daily and weekly tasks
 - Conflict warnings for tasks scheduled at the same exact time
 - Automated tests for key scheduling behaviors
+
+## Demo
+
+Here is a screenshot of the PawPal+ app in action:
+
+![PawPal+ demo](pawpal_demo.png)
