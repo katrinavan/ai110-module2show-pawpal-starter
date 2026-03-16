@@ -2,6 +2,8 @@
 
 ## 1. System Design
 
+## 1. System Design
+
 **a. Initial design**
 
 The three core actions a user should be able to perform in PawPal+ are:
@@ -23,7 +25,7 @@ This design separates data (Owner, Pet, Task) from scheduling logic (Scheduler),
 
 **b. Design changes**
 
-At this stage, the design has not significantly changed. However, during implementation I may adjust the Scheduler logic to better handle task priorities and constraints if new requirements arise.
+After reviewing my UML and class skeleton, I made small refinements rather than major design changes. I confirmed that the relationship structure should stay simple: an Owner has many Pets, each Pet has many Tasks, and the Scheduler is responsible for organizing tasks into a daily plan. I also made sure that the Scheduler handled planning logic instead of placing too much logic inside the Owner or Pet classes. This change keeps responsibilities clearer and makes the system easier to maintain as I move into implementation.
 ---
 
 ## 2. Scheduling Logic and Tradeoffs
