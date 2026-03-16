@@ -35,8 +35,7 @@ My scheduler currently considers task time as the main constraint and uses chron
 
 **b. Tradeoffs**
 
-One tradeoff my scheduler makes is that it sorts tasks by time instead of balancing many factors at once, such as urgency, duration, and owner preferences. This tradeoff is reasonable for this scenario because a simple time-based plan is easier to understand, test, and debug before adding more advanced scheduling logic.
-
+One tradeoff my scheduler makes is that conflict detection only checks for exact matching task times instead of more advanced overlapping durations. This tradeoff is reasonable because it keeps the algorithm simple, readable, and easy to test while still catching the most obvious scheduling issues for this version of the app.
 ---
 
 ## 3. AI Collaboration
