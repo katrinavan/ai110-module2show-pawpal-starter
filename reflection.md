@@ -4,14 +4,26 @@
 
 **a. Initial design**
 
-- Briefly describe your initial UML design.
-- What classes did you include, and what responsibilities did you assign to each?
+The three core actions a user should be able to perform in PawPal+ are:
+1. Add a pet and store basic information about that pet.
+2. Add and manage pet care tasks such as feeding, walks, medication, or grooming.
+3. Generate and view a daily care plan based on task priority and constraints.
+
+My initial UML design included four main classes: Owner, Pet, Task, and Scheduler.
+
+The **Owner** class represents the user of the application and stores information about the owner's pets and preferences. It is responsible for managing pets and retrieving tasks across all pets.
+
+The **Pet** class represents an individual pet and stores basic information such as name, species, age, and a list of care tasks associated with that pet.
+
+The **Task** class represents a specific pet care activity such as feeding, walking, or grooming. Each task stores information like description, duration, priority, and whether it has been completed.
+
+The **Scheduler** class is responsible for generating a daily care plan. It gathers tasks from all pets, considers priorities and constraints, and organizes tasks into a schedule for the owner.
+
+This design separates data (Owner, Pet, Task) from scheduling logic (Scheduler), making the system easier to maintain and expand.
 
 **b. Design changes**
 
-- Did your design change during implementation?
-- If yes, describe at least one change and why you made it.
-
+At this stage, the design has not significantly changed. However, during implementation I may adjust the Scheduler logic to better handle task priorities and constraints if new requirements arise.
 ---
 
 ## 2. Scheduling Logic and Tradeoffs
