@@ -96,3 +96,7 @@ The final version of PawPal+ includes:
 Here is a screenshot of the PawPal+ app in action:
 
 ![PawPal+ demo](pawpal_demo.png)
+
+## Summary for students
+
+The main concept students needed to understand was how to connect object-oriented design to a working scheduling system. In PawPal+, the Owner, Pet, Task, and Scheduler classes each have separate responsibilities, so students needed to see how data classes store information while the Scheduler handles logic like sorting, filtering, recurring tasks, and conflict detection. Students are most likely to get stuck when deciding what belongs inside each class, especially when separating pet/task data from scheduling behavior. AI was helpful for brainstorming the UML structure, drafting method ideas, and explaining recurring tasks or conflict detection, but it could also be misleading when it suggested overly complicated features beyond the project requirements. I would guide a student by asking them to trace one example task from creation to display in the schedule, then identify which class should be responsible for each step without giving them the full solution.

@@ -7,7 +7,7 @@ def print_schedule(title, tasks_with_pets):
     if not tasks_with_pets:
         print("No tasks found.")
         return
-
+ 
     for pet, task in tasks_with_pets:
         status = "Done" if task.completed else "Pending"
         print(

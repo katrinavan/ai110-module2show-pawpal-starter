@@ -9,7 +9,7 @@ if "owner" not in st.session_state:
     st.session_state.owner = Owner("Katrina")
 
 owner = st.session_state.owner
-scheduler = Scheduler(owner)
+scheduler = Scheduler(owner) 
 
 st.header("Add a Pet")
 with st.form("add_pet_form"):

@@ -7,7 +7,7 @@ from typing import List, Optional
 @dataclass
 class Task:
     """Represents a single pet care task."""
-    description: str
+    description: str 
     time: str
     frequency: str = "once"   # once, daily, weekly
     due_date: date = field(default_factory=date.today)

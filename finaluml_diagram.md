@@ -7,7 +7,7 @@ classDiagram
         -pets: List[Pet]
         -preferences: List[str]
         +add_pet(pet)
-        +get_all_tasks()
+        +get_all_tasks() 
     }
 
     class Pet {

@@ -8,7 +8,7 @@ classDiagram
     }
 
     class Pet {
-        -name: str
+        -name: str 
         -species: str
         -age: int
         -tasks: list
